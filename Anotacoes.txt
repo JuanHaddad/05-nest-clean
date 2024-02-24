@@ -13,6 +13,19 @@ nest -h
 Se quiser usar o pnpm, diferença explicada na linha 17:
 npm install -g pnpm
 
+baixando docker desktop no aorus:
+https://stackoverflow.com/questions/47963874/docker-desktop-for-windows-no-hypervisor-is-present-on-this-system
+
+
+Prisma como dependencia:
+pnpm i prisma -D
+
+CONFIGURAÇÃO PRA EXTENSAO DO PRISMA:
+"[prisma]": {
+  "editor.defaultFormatter": "Prisma.prisma",
+  "editor.formatOnSave": true
+},
+
 -----------------------------------------------------
 Qual a diferença do pnpm para o npm?
 - O pnpm lida melhor com cache, usa mais o cache local, a instalação dos pacotes geralmente é mais rapida e ocupa menos espaço por usar as dependencias globais
@@ -28,5 +41,17 @@ NEST --> Opiniao nos tipos de arquivos que vamos criar.
 ESLINT e PRETTIER: vou pegar da rocketseat mesmo pq n sei mexer nisso e pelo menos vejo as configs q utilizaram:
 pnpm i eslint @rocketseat/eslint-config -D
 
+
+
 Aqui o lint arruma tudo automatico por conta do comando ja pré definido:
 pnpm run lint
+
+
+Depois de instalar e configurar o Prisma (trocar credenciais no databaseurl .env e etc), basicamente o banco de dados será orientado a objetos,
+fazendo o começo do esquema você deve fazer a migracao (como se fosse um commit da base de dados):
+pnpm prisma migrate dev
+
+Isso pra realmente criar o banco de dados. 
+
+Para vermos o bd: 
+pnpm prisma studio 
