@@ -55,3 +55,7 @@ Isso pra realmente criar o banco de dados.
 
 Para vermos o bd: 
 pnpm prisma studio 
+
+ no tsconfig.json sempre deixar o strict e o strictNullChecks como true, todos os projetos precisam estar assim:
+    "strict": true,
+    "strictNullChecks": true,
