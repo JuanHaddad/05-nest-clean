@@ -1,2 +1,10 @@
 Qual a diferença do pnpm para o npm?
-- O pnpm lida melhor com cache, usa mais o cache local, a instalação dos pacotes geralmente é mais rapida e ocupa menos espaço
+- O pnpm lida melhor com cache, usa mais o cache local, a instalação dos pacotes geralmente é mais rapida e ocupa menos espaço por usar as dependencias globais
+
+Tô fazendo as requisiçoes http com curl pelo cmd mesmo, por conta de ser algo que eu já usei e tenho um pouco de familiaridade.
+
+NEST --> Opiniao nos tipos de arquivos que vamos criar.
+    controller: porta de entrada da aplicação (https), usa decorators (implementa algo numa função) "para indicar onde temos uma rota"
+    module: raiz do projeto, o arquivo que junta tudo, controllers comunicacoes bancos de dados, tudo nele, todo módulo é uma classe vazia que tem seu decorator, com seus controllers e providers numa lista.
+    service: é o que define tudo ser automatizado, com seu decorator @Injectable, e podem ser qualquer coisa que nao seja uma req http.
+
