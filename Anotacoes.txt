@@ -1,0 +1,2 @@
+Qual a diferença do pnpm para o npm?
+- O pnpm lida melhor com cache, usa mais o cache local, a instalação dos pacotes geralmente é mais rapida e ocupa menos espaço
