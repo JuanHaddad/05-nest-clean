@@ -2,23 +2,23 @@
     WINDOWS:
 
 Com node instalado, baixar o nest:
-npm i -g @nestjs/cli
+  npm i -g @nestjs/cli
 
 Se der algum erro de permission denied, isso vai dar a permissão para o seu perfil:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Para ver se foi mesmo:
-nest -h
+  nest -h
 
-Se quiser usar o pnpm, diferença explicada na linha 17:
-npm install -g pnpm
+Se quiser usar o pnpm, diferença explicada na linha 42:
+  npm install -g pnpm
 
 erro baixando docker desktop no aorus:
-https://stackoverflow.com/questions/47963874/docker-desktop-for-windows-no-hypervisor-is-present-on-this-system
+  https://stackoverflow.com/questions/47963874/docker-desktop-for-windows-no-hypervisor-is-present-on-this-system
 
 
 Prisma como dependencia:
-pnpm i prisma -D
+  pnpm i prisma -D
 
 CONFIGURAÇÃO PRA EXTENSAO DO PRISMA:
 "[prisma]": {
@@ -28,8 +28,16 @@ CONFIGURAÇÃO PRA EXTENSAO DO PRISMA:
 
 
 módulo para hash de senhas mais recomendado (não é tipado entao tem q pegar o types):
-pnpm i bcryptjs
-pnpm i @types/bcryptjs -D
+  pnpm i bcryptjs
+  pnpm i @types/bcryptjs -D
+
+biblioteca para validaçao/validaçao de dados:
+  pnpm i zod
+
+  se quiser uma com os erros de maneira ainda mais legível:
+    pnpm i zod-validation-error
+
+
 -----------------------------------------------------
 Qual a diferença do pnpm para o npm?
 - O pnpm lida melhor com cache, usa mais o cache local, a instalação dos pacotes geralmente é mais rapida e ocupa menos espaço por usar as dependencias globais
@@ -63,3 +71,6 @@ pnpm prisma studio
  no tsconfig.json sempre deixar o strict e o strictNullChecks como true, todos os projetos precisam estar assim:
     "strict": true,
     "strictNullChecks": true,
+
+
+  Pipes são interceptadores
