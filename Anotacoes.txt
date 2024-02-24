@@ -26,6 +26,10 @@ CONFIGURAÇÃO PRA EXTENSAO DO PRISMA:
   "editor.formatOnSave": true
 },
 
+
+módulo para hash de senhas mais recomendado (não é tipado entao tem q pegar o types):
+pnpm i bcryptjs
+pnpm i @types/bcryptjs -D
 -----------------------------------------------------
 Qual a diferença do pnpm para o npm?
 - O pnpm lida melhor com cache, usa mais o cache local, a instalação dos pacotes geralmente é mais rapida e ocupa menos espaço por usar as dependencias globais
