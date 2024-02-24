@@ -13,7 +13,7 @@ nest -h
 Se quiser usar o pnpm, diferença explicada na linha 17:
 npm install -g pnpm
 
-baixando docker desktop no aorus:
+erro baixando docker desktop no aorus:
 https://stackoverflow.com/questions/47963874/docker-desktop-for-windows-no-hypervisor-is-present-on-this-system
 
 
